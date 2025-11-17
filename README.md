@@ -12,7 +12,10 @@ This repository hosts a tiny full-stack playground: a modern Next.js front end t
 
 ## 1. Backend Setup (Python + FastAPI)
 1. `cd backend`
-2. (optional but recommended) `python -m venv .venv && source .venv/bin/activate`
+2. (optional but recommended) create/activate a virtual env:
+   - macOS/Linux: `python -m venv .venv && source .venv/bin/activate`
+   - Windows PowerShell: `python -m venv .venv; .\.venv\Scripts\Activate.ps1`
+   - Windows Command Prompt: `python -m venv .venv && .\.venv\Scripts\activate.bat`
 3. `pip install -r requirements.txt`
 4. Start the API: `uvicorn main:app --reload --port 8000`
 
